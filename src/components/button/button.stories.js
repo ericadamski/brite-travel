@@ -3,6 +3,8 @@ import { storiesOf } from "@storybook/react";
 import React from "react";
 import Button from "./index";
 
+import Wrapper from "../../../.storybook/wrapper";
+
 /**
  * JSX
  *
@@ -22,10 +24,16 @@ storiesOf("Button", module)
 
     // button.addEventListener('click', function () {});
 
-    return <Button onClick={action("Clicked Button")}>click me</Button>;
+    return (
+      <Wrapper>
+        <Button onClick={action("Clicked Button")}>click me</Button>
+      </Wrapper>
+    );
   })
   .add("Disabled", () => (
-    <Button disabled onClick={action("Clicked Button")}>
-      click me
-    </Button>
+    <Wrapper>
+      <Button disabled onClick={action("Clicked Button")}>
+        click me
+      </Button>
+    </Wrapper>
   ));

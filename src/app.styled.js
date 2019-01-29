@@ -6,6 +6,7 @@ export const Page = styled.main`
   width: 100vw;
   /* viewport height (vh) */
   height: 100vh;
+  padding: 3rem;
   background-color: ${Colors.saffron};
   overflow: hidden scroll;
 `;

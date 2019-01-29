@@ -10,9 +10,12 @@ import * as serviceWorker from "./serviceWorker";
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates
  */
 const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light');
+
   html, body {
     padding: 0;
     margin: 0;
+    font-family: 'Shadows Into Light', cursive;
   }
 
   *, *::after, *::before {
